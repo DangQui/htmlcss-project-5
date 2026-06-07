@@ -49,10 +49,46 @@ button {
     border: none;
     background-color: var(--primary--color);
     border-radius: 8px;
+    color: #fff;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .btn:hover {
     opacity: 0.9;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+.section-title::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    margin-right: 12px;
+}
+
+.section-heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.68;
 }
 
 /* Header */
@@ -73,11 +109,11 @@ button {
 
 .navbar__list {
     display: flex;
-    margin-left: 70px;
+    margin-left: 46px;
 }
 
 .navbar__link {
-    padding: 12px 35px;
+    padding: 12px 24px;
     color: #696d76;
     font-size: 1.6rem;
     line-height: 1.75;
@@ -91,7 +127,7 @@ button {
 .navbar__link:hover,
 .header-action__link {
     color: #212832;
-    text-shadow: 1px 0 0 currentColor;
+    text-shadow: 0.5px 0 0 currentColor;
 }
 
 .navbar__text.active::after {
@@ -123,4 +159,83 @@ button {
     background: #212832;
     color: #fff;
     font-weight: 600;
+}
+
+.sticky {
+    position: sticky;
+    top: -30px;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+/* Hero */
+.hero {
+    margin-top: 52px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    height: 562px;
+}
+
+.hero__content {
+    width: 46%;
+}
+
+.hero__heading {
+    font-size: 6rem;
+    line-height: 1.17;
+}
+
+.hero__heading-highlight {
+    color: var(--primary--color);
+}
+
+.hero-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+    height: 74px;
+}
+
+.hero-form__input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+    border: none;
+    outline: none;
+    padding: 0 180px 0 24px;
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.hero-form__input::placeholder {
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+/* .hero-form__input:focus::placeholder {
+    color: transparent;
+} */
+
+.hero-form__submit {
+    position: absolute;
+    right: 8px;
+}
+
+.hero__note {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
 }
