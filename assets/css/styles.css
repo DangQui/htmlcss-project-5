@@ -91,6 +91,11 @@ button {
     line-height: 1.68;
 }
 
+.hidden {
+    opacity: 0;
+    overflow: hidden;
+}
+
 /* Header */
 .header {
     padding: 42px 0 12px;
@@ -171,12 +176,13 @@ button {
 
 /* Hero */
 .hero {
-    margin-top: 52px;
+    margin-top: 64px;
 }
 
 .hero__inner {
     display: flex;
     align-items: center;
+    column-gap: 60px;
     height: 562px;
 }
 
@@ -238,4 +244,155 @@ button {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.71;
+}
+
+.hero__media {
+    position: relative;
+    flex-grow: 1;
+}
+
+.hero__img-wrap {
+    position: relative;
+    margin-left: 100px;
+    width: 296px;
+    height: 562px;
+}
+
+.hero__img-phone {
+    width: 100%;
+    object-fit: cover;
+}
+
+.deposit__tag {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 113px;
+    left: 0;
+    z-index: 10;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+    max-width: 181px;
+    animation: float 2s ease-in-out infinite;
+}
+
+.deposit__tag:hover {
+    cursor: pointer;
+}
+
+.deposit__icon {
+    width: 18px;
+    height: 18px;
+}
+
+.deposit__label {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.deposit__price {
+    margin-left: 19px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.interest__tag {
+    position: absolute;
+    top: 126px;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+    animation: spinner 2s ease-in-out infinite;
+}
+
+.interest__percent {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.interest__label {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.secure-funds__tag {
+    position: absolute;
+    right: 100px;
+    bottom: 62px;
+    display: flex;
+    align-items: center;
+    width: 124px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439f90;
+    animation: float-x 2s ease-in-out infinite;
+}
+
+.secure-text {
+    margin-left: 11px;
+}
+
+.secure-text__price {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.secure-text__label {
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+/* Keyframe */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes float-x {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

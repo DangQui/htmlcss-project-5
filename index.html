@@ -75,6 +75,11 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet" />
 
+        <!-- Animated -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -138,7 +143,8 @@
             <section class="hero">
                 <div class="container">
                     <div class="hero__inner">
-                        <section class="hero__content">
+                        <section
+                            class="hero__content animate__animated animate__bounceInLeft">
                             <p class="section-title">Digital Smart Wallet</p>
                             <h1 class="section-heading hero__heading">
                                 Digital
@@ -168,7 +174,39 @@
                                 email.
                             </p>
                         </section>
-                        <div class="hero__media"></div>
+                        <div class="hero__media">
+                            <div class="hero__img-wrap">
+                                <img
+                                    src="./assets/img/hero-01.png"
+                                    alt="Phone"
+                                    class="hero__img-phone" />
+                            </div>
+                            <div class="deposit__tag">
+                                <img
+                                    src="./assets/img/hero-02.svg"
+                                    alt="deposited"
+                                    class="deposit__icon" />
+                                <span class="deposit__label">Deposite</span>
+                                <span class="deposit__price">$32000</span>
+                            </div>
+                            <div class="interest__tag">
+                                <span class="interest__percent">0%</span>
+                                <span class="interest__label">Interest</span>
+                            </div>
+                            <div class="secure-funds__tag">
+                                <img
+                                    src="./assets/img/hero-03.svg"
+                                    alt="Secured-Funds" />
+                                <div class="secure-text">
+                                    <span class="secure-text__price">
+                                        $1.310
+                                    </span>
+                                    <span class="secure-text__label">
+                                        SECURED FUNDS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
