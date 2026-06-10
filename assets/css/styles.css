@@ -506,6 +506,61 @@ button {
     line-height: 1.75;
 }
 
+/* Feature Card */
+.feature-card {
+    margin-top: 160px;
+}
+
+.feature-cart__inner {
+    display: flex;
+    align-items: center;
+}
+
+.feature-cart__left {
+    width: 40%;
+}
+
+.feature-card__list {
+    margin-top: 28px;
+}
+
+.feature-card__item {
+    display: flex;
+    align-items: center;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.feature-card__item::before {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+    margin-right: 12px;
+}
+
+.feature-card__item:not(:first-child) {
+    margin-top: 18px;
+}
+
+.feature-card__btn {
+    margin-top: 38px;
+    background: #212832;
+}
+
+.feature-card__media {
+    margin-left: 130px;
+}
+
+.feature-card__img {
+    width: 482px;
+    height: 322px;
+}
+
 /* Keyframe */
 @keyframes float {
     0% {
