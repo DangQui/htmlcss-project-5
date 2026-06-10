@@ -553,12 +553,115 @@ button {
 }
 
 .feature-card__media {
+    position: relative;
     margin-left: 130px;
+    font-family: Inter, sans-serif;
 }
 
 .feature-card__img {
     width: 482px;
     height: 322px;
+}
+
+.feature-card__transfer {
+    position: absolute;
+    top: -48px;
+    right: -88px;
+    display: flex;
+    align-items: center;
+    padding: 24px 14px;
+    padding-left: 22px;
+    width: 276px;
+    height: 86px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.07);
+    animation: float 2s linear infinite;
+}
+
+.feature-card__icon-transfer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card__icon-transfer::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    opacity: 0.1;
+    background: #da6464;
+    box-shadow:
+        -4px -2px 16px 0 #fff,
+        4px 2px 16px 0 rgba(136, 165, 191, 0.48);
+}
+
+.feature-card__transfer-content {
+    margin-left: 24px;
+}
+
+.feature-card__transfer-title {
+    color: #212832;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.feature-card__transfer-day,
+.feature-card__transfer-subtitle {
+    margin-top: 4px;
+    color: #696d76;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+.feature-card__transfer-price {
+    margin-left: 68px;
+}
+
+.feature-card__transfer-discount {
+    color: #212832;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.feature-card__transfer-day {
+    float: right;
+}
+
+.feature-card__receive {
+    position: absolute;
+    right: -88px;
+    bottom: -55px;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #439f90;
+    animation: floatx 2s linear infinite;
+}
+
+.feature-card__receive-text {
+    margin-top: 14px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.feature-card__receive-price {
+    margin-top: 6px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
 }
 
 /* Keyframe */
@@ -592,6 +695,18 @@ button {
     }
     50% {
         transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes floatx {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
     }
     100% {
         transform: translateX(0);
