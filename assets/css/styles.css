@@ -360,6 +360,129 @@ button {
     line-height: 1;
 }
 
+/* HIW */
+.how-is-works {
+    margin-top: 160px;
+}
+
+.hiw__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 230px;
+}
+
+.hiw__media {
+    position: relative;
+    width: 470px;
+}
+
+.hiw__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hiw__logo-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 62px;
+    top: 98px;
+    animation: zoom-loop 2s ease-in-out infinite;
+}
+
+.hiw__logo-icon::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #f8fbfe;
+    z-index: 3;
+}
+
+.hiw__logo-icon::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background: #7264d6;
+    z-index: 2;
+}
+
+.hiw__logo {
+    z-index: 10;
+}
+
+.diw-img__congrats {
+    position: absolute;
+    right: -100px;
+    bottom: 96px;
+    display: flex;
+    align-items: center;
+    width: 226px;
+    height: 70px;
+    padding: 15px 15px 15px 30px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0 14px 34px 0 rgba(0, 0, 0, 0.07);
+    animation: float 2s ease-in-out infinite;
+}
+
+.diw-img__congrats-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diw-img__congrats-img::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 2;
+}
+
+.diw-img__congrats-img::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: #4ab5e3;
+    z-index: 1;
+}
+
+.diw-img__congrats-image {
+    z-index: 10;
+}
+
+.hiw__congrats-text {
+    margin-left: 25px;
+    font-family: Inter, sans-serif;
+}
+
+.hiw__congrats-title {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hiw__congrats-subtitle {
+    color: #696d76;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
 /* Keyframe */
 @keyframes float {
     0% {
@@ -394,5 +517,17 @@ button {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes zoom-loop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
