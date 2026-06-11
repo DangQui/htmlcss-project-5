@@ -664,6 +664,87 @@ button {
     line-height: normal;
 }
 
+/* Transfer */
+.transfer {
+    margin-top: 160px;
+}
+
+.transfer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transfer__media {
+    position: relative;
+    width: 470px;
+    flex-shrink: 0;
+}
+
+.transfer__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.transfer__action-payment {
+    position: absolute;
+    right: -74px;
+    bottom: 58px;
+    width: 281px;
+    height: 220px;
+    padding: 28px;
+    background: #fff;
+    box-shadow: 0 44px 48px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.transfer__payment-title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.transfer__payment-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.transfer__payment-item {
+    width: 63px;
+    height: 48px;
+}
+
+.transfer__payment-item:hover {
+    opacity: 0.9;
+}
+
+.transfer__payment-img {
+    width: 100%;
+}
+
+.transfer__payment-money {
+    position: absolute;
+    right: -26px;
+    top: -36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #7264d6;
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1);
+    animation: spinner 2s linear infinite;
+}
+
+.transfer__content {
+    margin-left: 230px;
+}
+
 /* Keyframe */
 @keyframes float {
     0% {
