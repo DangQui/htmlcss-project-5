@@ -789,11 +789,11 @@ button {
     padding: 42px 28px;
     background: #fff;
     border-radius: 8px;
-    filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
+    filter: drop-shadow(0 0px 1px #dfe2e8);
 }
 
 .testimonial-card__text:hover {
-    filter: drop-shadow(0 1px 1px #dfe2e8);
+    filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
     cursor: pointer;
 }
 
@@ -869,6 +869,10 @@ button {
     height: 6px;
     border: 1px solid #9b9fab;
     border-radius: 1px;
+}
+
+.testimonial-card__dot:not(:first-child) {
+    margin-left: 8px;
 }
 
 .testimonial-card__dot.active {
