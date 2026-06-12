@@ -96,6 +96,25 @@ button {
     overflow: hidden;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-2 {
+    --line-clamp: 2;
+}
+
+.line-3 {
+    --line-clamp: 3;
+}
+
+.line-4 {
+    --line-clamp: 4;
+}
+
 /* Header */
 .header {
     padding: 42px 0 12px;
@@ -883,6 +902,111 @@ button {
 .testimonial-card__dot:hover {
     cursor: pointer;
     background: #7264d6;
+}
+
+/* Blog */
+.blog {
+    margin-top: 160px;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    max-width: 435px;
+}
+
+.blog__heading {
+    margin-top: 6px;
+}
+
+.blog__desc {
+    margin-top: 18px;
+    color: #696d76;
+    font-size: 1.6rem;
+}
+
+.blog__btn {
+    --height: 58px;
+
+    min-width: 124px;
+    background: #212832;
+}
+
+.blog__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.blog-item {
+    display: flex;
+    align-items: center;
+    width: 570px;
+    height: 216px;
+    border-radius: 12px;
+    border: 1px solid #dfe2e8;
+    background: #fff;
+    padding: 28px;
+}
+
+.blog-item:hover {
+    background: #fff;
+    border-color: #fff;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+}
+
+.blog-item:hover .blog-item__cta {
+    color: #7264d6;
+}
+
+.blog-item-image {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.blog__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-item:hover .blog__img {
+    transform: scale(1.1);
+}
+
+.blog-item__info {
+    margin-left: 22px;
+}
+
+.blog-item__day {
+    color: #696d76;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.blog-item__heading {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    margin-top: 10px;
+}
+
+.blog-item__cta {
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.63;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 /* Keyframe */
